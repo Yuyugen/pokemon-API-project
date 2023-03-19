@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <script src="pokescript.js" async defer></script>
+
+    <h2>Pokémon</h2>
+
+    <div id="cardsContainer" class="cardsContainer">
+      <div class="cardsContainer__pokeCard">
+        <div class="cardcolumn1">
+          <div class="cardsContainer__pokeCard__name">
+            <h2 id="nameText">Pikachu</h2>
+          </div>
+
+          <div class="cardsContainer__pokeCard__picture">
+            <img
+              id="pokeImg"
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+              alt=""
+            />
+          </div>
+
+          <div class="cardsContainer__pokeCard__weight">
+            <div>Weight:</div>
+            <div id="weightText">60</div>
+          </div>
+
+          <div class="cardsContainer__pokeCard__type">
+            <div>Type:</div>
+            <div id="typeText">electric</div>
+          </div>
+        </div>
+
+        <div class="cardcolumn2">
+          <div class="cardsContainer__pokeCard__pokeball">
+            <img src="images\pokeball.png" alt="" />
+          </div>
+
+          <div class="cardsContainer__pokeCard__description">
+            <div id="descText">
+              When several of these POKéMON gather, their electricity could
+              build and cause lightning storms.
+            </div>
+          </div>
+
+          <div class="cardsContainer__pokeCard__region">
+            <div>Region:</div>
+            <div id="regionText">national</div>
+          </div>
+
+          <div class="cardsContainer__pokeCard__generation">
+            <div>Generation</div>
+            <div id="genText">I</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cardsContainer__pokeCard-custom">
+        <div class="cardcolumn1">
+          <div class="cardsContainer__pokeCard-custom__name">
+            <h2 id="custom-nameText">Add new</h2>
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__picture">
+            <img id="custom-pokeImg" src="images\plusimg.png" alt="" />
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__weight">
+            <div>Weight:</div>
+            <div id="custom-weightText">???</div>
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__type">
+            <div>Type:</div>
+            <div id="custom-typeText">???</div>
+          </div>
+        </div>
+
+        <div class="cardcolumn2">
+          <div class="cardsContainer__pokeCard-custom__pokeball">
+            <img src="images\pokeball.png" alt="" />
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__description">
+            <div id="custom-descText">Pokémon description here.</div>
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__region">
+            <div>Region:</div>
+            <div id="custom-regionText">???</div>
+          </div>
+
+          <div class="cardsContainer__pokeCard-custom__generation">
+            <div>Generation</div>
+            <div id="custom-genText">???</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
