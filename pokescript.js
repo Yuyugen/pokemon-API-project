@@ -42,13 +42,31 @@ async function addNewCard(pokemonName) {
     .catch((err) => console.log("error"));
 
   //set pokemon field types
+
   const pokeName = pokeData.name;
   const pokeSprite = pokeData.sprites.front_default;
   const pokeWeight = pokeData.weight;
   const pokeType = pokeData.types[0].type.name;
-  const pokeDesc = speciesData.flavor_text_entries[0].flavor_text;
-  const pokeRegion = speciesData.pokedex_numbers[0].pokedex.name;
+  let pokeDesc;
+  let pokeRegion = speciesData.pokedex_numbers[1].pokedex.name;
   const pokeGen = speciesData.generation.name;
+
+  //set description to english
+  for (let i = 0; i < speciesData.flavor_text_entries.length; i++) {
+    if (speciesData.flavor_text_entries[i].language.name === "en") {
+      pokeDesc = speciesData.flavor_text_entries[i].flavor_text;
+    }
+  }
+
+  //aggiusta la cazzo di regione
+  if (pokeRegion.includes("original-")) {
+    console.log("suca");
+    pokeRegion =
+      pokeRegion.split("-")[1].charAt(0).toUpperCase() +
+      pokeRegion.split("-")[1].slice(1);
+  } else {
+    pokeRegion = pokeRegion.charAt(0).toUpperCase() + pokeRegion.slice(1);
+  }
 
   let cardContainer = document.getElementById("cardsContainer");
 
