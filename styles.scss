@@ -1,0 +1,235 @@
+body {
+  font-family: Kanit, sans-serif;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-self: center;
+  width: fit-content;
+  margin: auto;
+
+  &__pokeCard {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    width: 22rem;
+    height: fit-content;
+    background-color: rgb(217, 109, 109);
+    padding: 1rem;
+    border-radius: 16px;
+    outline: black solid 2px;
+
+    .cardcolumn1 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      row-gap: 1rem;
+    }
+
+    .cardcolumn2 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      row-gap: 1rem;
+    }
+
+    &__name {
+      display: flex;
+      justify-content: center;
+      text-overflow: ellipsis;
+      word-wrap: break-word;
+
+      h2 {
+        margin: 0 0;
+        width: 100%;
+      }
+    }
+
+    &__picture {
+      background: linear-gradient(#9f9f9f, #4e4e4e);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 135px;
+      outline: white solid 1px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &__weight {
+      display: inline-flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__type {
+      display: inline-flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__pokeball {
+      position: relative;
+      grid-row-start: 1;
+      height: 27.2px;
+
+      img {
+        position: absolute;
+        height: 100%;
+        right: 0;
+      }
+    }
+
+    &__description {
+      grid-row-start: 2;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+      height: 125px;
+      overflow-y: auto;
+    }
+
+    &__region {
+      display: inline-flex;
+      gap: 0.5rem;
+      grid-row-start: 3;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__generation {
+      display: inline-flex;
+      gap: 0.5rem;
+      grid-row-start: 4;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+  }
+
+  &__pokeCard-custom {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 1rem;
+    width: 22rem;
+    height: fit-content;
+    background-color: rgb(217, 109, 109);
+    padding: 1rem;
+    border-radius: 16px;
+    outline: black solid 2px;
+
+    .cardcolumn1 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      row-gap: 1rem;
+    }
+
+    .cardcolumn2 {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      row-gap: 1rem;
+    }
+
+    &__name {
+      display: flex;
+      justify-content: center;
+
+      h2 {
+        margin: 0 0;
+      }
+    }
+
+    &__picture {
+      background: linear-gradient(#9f9f9f, #4e4e4e);
+      border-radius: 16px;
+      overflow: hidden;
+      width: 135px;
+      outline: white solid 1px;
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(1.5);
+      }
+    }
+
+    &__weight {
+      display: inline-flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__type {
+      display: inline-flex;
+      gap: 0.5rem;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__pokeball {
+      position: relative;
+      grid-row-start: 1;
+      height: 27.2px;
+
+      img {
+        position: absolute;
+        height: 100%;
+        right: 0;
+      }
+    }
+
+    &__description {
+      grid-row-start: 2;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+      height: 125px;
+      overflow-y: auto;
+    }
+
+    &__region {
+      display: inline-flex;
+      gap: 0.5rem;
+      grid-row-start: 3;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+
+    &__generation {
+      display: inline-flex;
+      gap: 0.5rem;
+      grid-row-start: 4;
+      padding: 0.5rem;
+      border-radius: 16px;
+      background-color: rgb(255, 228, 199);
+      font-weight: 600;
+    }
+  }
+}

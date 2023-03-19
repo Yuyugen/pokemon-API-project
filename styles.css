@@ -1,0 +1,208 @@
+body {
+  font-family: Kanit, sans-serif;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  justify-self: center;
+  width: fit-content;
+  margin: auto;
+}
+.cardsContainer__pokeCard {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  width: 22rem;
+  height: fit-content;
+  background-color: rgb(217, 109, 109);
+  padding: 1rem;
+  border-radius: 16px;
+  outline: black solid 2px;
+}
+.cardsContainer__pokeCard .cardcolumn1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 1rem;
+}
+.cardsContainer__pokeCard .cardcolumn2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 1rem;
+}
+.cardsContainer__pokeCard__name {
+  display: flex;
+  justify-content: center;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.cardsContainer__pokeCard__name h2 {
+  margin: 0 0;
+  width: 100%;
+}
+.cardsContainer__pokeCard__picture {
+  background: linear-gradient(#9f9f9f, #4e4e4e);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 135px;
+  outline: white solid 1px;
+}
+.cardsContainer__pokeCard__picture img {
+  width: 100%;
+}
+.cardsContainer__pokeCard__weight {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard__type {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard__pokeball {
+  position: relative;
+  grid-row-start: 1;
+  height: 27.2px;
+}
+.cardsContainer__pokeCard__pokeball img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+.cardsContainer__pokeCard__description {
+  grid-row-start: 2;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+  height: 125px;
+  overflow-y: auto;
+}
+.cardsContainer__pokeCard__region {
+  display: inline-flex;
+  gap: 0.5rem;
+  grid-row-start: 3;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard__generation {
+  display: inline-flex;
+  gap: 0.5rem;
+  grid-row-start: 4;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard-custom {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1rem;
+  width: 22rem;
+  height: fit-content;
+  background-color: rgb(217, 109, 109);
+  padding: 1rem;
+  border-radius: 16px;
+  outline: black solid 2px;
+}
+.cardsContainer__pokeCard-custom .cardcolumn1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 1rem;
+}
+.cardsContainer__pokeCard-custom .cardcolumn2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 1rem;
+}
+.cardsContainer__pokeCard-custom__name {
+  display: flex;
+  justify-content: center;
+}
+.cardsContainer__pokeCard-custom__name h2 {
+  margin: 0 0;
+}
+.cardsContainer__pokeCard-custom__picture {
+  background: linear-gradient(#9f9f9f, #4e4e4e);
+  border-radius: 16px;
+  overflow: hidden;
+  width: 135px;
+  outline: white solid 1px;
+}
+.cardsContainer__pokeCard-custom__picture img {
+  width: 100%;
+}
+.cardsContainer__pokeCard-custom__picture:hover {
+  cursor: pointer;
+  filter: brightness(1.5);
+}
+.cardsContainer__pokeCard-custom__weight {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard-custom__type {
+  display: inline-flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard-custom__pokeball {
+  position: relative;
+  grid-row-start: 1;
+  height: 27.2px;
+}
+.cardsContainer__pokeCard-custom__pokeball img {
+  position: absolute;
+  height: 100%;
+  right: 0;
+}
+.cardsContainer__pokeCard-custom__description {
+  grid-row-start: 2;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+  height: 125px;
+  overflow-y: auto;
+}
+.cardsContainer__pokeCard-custom__region {
+  display: inline-flex;
+  gap: 0.5rem;
+  grid-row-start: 3;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+.cardsContainer__pokeCard-custom__generation {
+  display: inline-flex;
+  gap: 0.5rem;
+  grid-row-start: 4;
+  padding: 0.5rem;
+  border-radius: 16px;
+  background-color: rgb(255, 228, 199);
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=styles.css.map */
