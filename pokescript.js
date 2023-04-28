@@ -23,6 +23,9 @@ function insertPkmnName() {
   newForm.addEventListener("submit", (event) => {
     event.preventDefault();
     addNewCard(textInput.value);
+    document
+      .querySelector(".cardsContainer__pokeCard-custom__pokeball")
+      .removeChild(newForm);
   });
 }
 
